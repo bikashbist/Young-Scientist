@@ -17,13 +17,16 @@ ul li a {
 }
 
 .header__top {
-  background-color: #FFD500;
+  background-color: #efefef;
 }
 .header__top p {
   margin-bottom: 0px;
 }
 .header__navbar {
   border-bottom: 5px solid #f18500;
+  /* Style for the dropdown */
+  /* Arrow flipping */
+  /* Add transition for smooth arrow flip */
 }
 .header__navbar--left a {
   padding: 15px 30px 15px 0px;
@@ -46,6 +49,41 @@ ul li a {
   margin-left: 30px;
   color: #fff;
   font-weight: 600;
+}
+.header__navbar .dropdown {
+  position: relative;
+}
+.header__navbar .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  z-index: 1;
+  min-width: 250px;
+}
+.header__navbar .dropdown-menu li {
+  list-style: none;
+  padding: 10px 20px;
+}
+.header__navbar .dropdown-menu li a {
+  text-decoration: none;
+  color: #333;
+}
+.header__navbar .dropdown:hover .dropdown-menu {
+  display: block;
+}
+.header__navbar .dropdown:hover .arrow {
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+}
+.header__navbar .arrow {
+  transition: transform 0.3s;
+}
+.header .dropdown-menu a {
+  padding: 0px 0px 0px 0px;
 }
 
 .banner__details {
@@ -147,7 +185,8 @@ ul li a {
   width: 100%;
   border-radius: 5px;
 }
-.unlock .image-container::after { /* Adds the second green background */
+.unlock .image-container::after {
+  /* Adds the second green background */
   content: "";
   position: absolute;
   top: -30px;
