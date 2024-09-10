@@ -467,4 +467,51 @@ ul li a {
   background-color: #EFEFEF;
   padding: 50px;
   border-radius: 5px;
+}
+
+.summer-camp {
+  height: 400px;
+}
+.summer-camp img {
+  width: 100%;
+  -o-object-fit: fill;
+  object-fit: fill;
+  height: 100%;
+}
+
+.courses_available__details {
+  border-radius: 5px;
+  overflow: hidden;
+}
+.courses_available__details img {
+  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.courses_available__details .bg-one {
+  background-color: #f18500;
+}
+.courses_available__details h5 {
+  margin-bottom: 0;
+}
+.courses_available__content {
+  background: #efefef;
+  padding: 0px 0px 15px 0px;
+}
+.courses_available__content p {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  background-color: #efefef;
+  display: block;
+  padding: 8px 20px;
+}
+.courses_available__content p a {
+  color: rgb(33, 37, 41);
+  text-decoration: none;
+}
+
+.camp-title {
+  background-color: #f18500;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
