@@ -109,8 +109,9 @@ ul {
         }
 
     }
-    .dropdown-menu{
-        a{
+
+    .dropdown-menu {
+        a {
             padding: 0px 0px 0px 0px;
         }
     }
@@ -602,41 +603,52 @@ ul {
 
     }
 }
-.summer-camp{
+
+.summer-camp {
     height: 400px;
-    img{
+
+    img {
         width: 100%;
         -o-object-fit: fill;
         object-fit: fill;
         height: 100%;
-    };
+    }
+
+    ;
 }
-.courses_available{
-    &__details{
+
+.courses_available {
+    &__details {
         border-radius: 5px;
         overflow: hidden;
-        img{
+
+        img {
             height: 200px;
             width: 100%;
             object-fit: cover;
         }
-        .bg-one{
+
+        .bg-one {
             background-color: #f18500;
         }
-        h5{
+
+        h5 {
             margin-bottom: 0;
         }
-       
+
     }
-    &__content{
+
+    &__content {
         background: #efefef;
         padding: 0px 0px 15px 0px;
-        p{
+
+        p {
             padding-bottom: 0px;
             margin-bottom: 0px;
             background-color: #efefef;
             display: block;
             padding: 8px 20px;
+
             a {
                 color: rgb(33 37 41);
                 text-decoration: none;
@@ -644,7 +656,150 @@ ul {
         }
     }
 }
-.camp-title{
+
+.camp-title {
     background-color: $logo-color;
     color: #fff;
+}
+
+.cic-approch {
+    img {
+        width: 100%;
+    }
+}
+
+.offer {
+    h1 {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    h4 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 500;
+    }
+}
+
+.end-to-end {
+    h2 {
+        font-weight: bold;
+        font-size: 36px;
+    }
+
+    span {
+        font-size: 30px;
+        color: #ffc107;
+        font-weight: 500;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 500;
+    }
+}
+
+.end-to-end-content {
+    h5 {
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        padding-bottom: 0px;
+        margin-bottom: 8px;
+    }
+}
+
+.title-robo {
+    img {
+        width: 100%;
+
+        object-fit: contain;
+    }
+}
+
+.camp-title-bg {
+    background-color: #0dcaf0;
+    color: #fff;
+}
+
+.title-robo img {
+    width: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    background: #ffc107;
+}
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.setup {
+
+    /* Position the navigation arrows */
+    .owl-nav .owl-prev,
+    .owl-nav .owl-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #f8f9fa;
+        /* Background color for the arrows */
+        border-radius: 50%;
+        /* Circular button */
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 1000;
+        /* Ensure arrows are above other elements */
+    }
+
+    /* Position the left arrow to the far left */
+    .owl-nav .owl-prev {
+        left: -60px;
+        /* Adjust this value to your preference */
+    }
+
+    /* Position the right arrow to the far right */
+    .owl-nav .owl-next {
+        right: -60px;
+        /* Adjust this value to your preference */
+    }
+
+    /* Style the arrow icons */
+    .owl-nav .owl-prev i,
+    .owl-nav .owl-next i {
+        font-size: 20px;
+        /* Font size of the arrows */
+        color: #000;
+        /* Color of the arrow icons */
+    }
+
+}
+.coding-chalange{
+    h4{
+        font-size: 36px;
+    }
 }

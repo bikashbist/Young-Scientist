@@ -514,4 +514,126 @@ ul li a {
 .camp-title {
   background-color: #f18500;
   color: #fff;
+}
+
+.cic-approch img {
+  width: 100%;
+}
+
+.offer h1 {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.offer h4 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.offer p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.end-to-end h2 {
+  font-weight: bold;
+  font-size: 36px;
+}
+.end-to-end span {
+  font-size: 30px;
+  color: #ffc107;
+  font-weight: 500;
+}
+.end-to-end p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.end-to-end-content h5 {
+  font-weight: bold;
+}
+.end-to-end-content p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  padding-bottom: 0px;
+  margin-bottom: 8px;
+}
+
+.title-robo img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.camp-title-bg {
+  background-color: #0dcaf0;
+  color: #fff;
+}
+
+.title-robo img {
+  width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  background: #ffc107;
+}
+
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.setup {
+  /* Position the navigation arrows */
+  /* Position the left arrow to the far left */
+  /* Position the right arrow to the far right */
+  /* Style the arrow icons */
+}
+.setup .owl-nav .owl-prev,
+.setup .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f8f9fa;
+  /* Background color for the arrows */
+  border-radius: 50%;
+  /* Circular button */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  /* Ensure arrows are above other elements */
+}
+.setup .owl-nav .owl-prev {
+  left: -60px;
+  /* Adjust this value to your preference */
+}
+.setup .owl-nav .owl-next {
+  right: -60px;
+  /* Adjust this value to your preference */
+}
+.setup .owl-nav .owl-prev i,
+.setup .owl-nav .owl-next i {
+  font-size: 20px;
+  /* Font size of the arrows */
+  color: #000;
+  /* Color of the arrow icons */
+}
+
+.coding-chalange h4 {
+  font-size: 36px;
 }/*# sourceMappingURL=style.css.map */
