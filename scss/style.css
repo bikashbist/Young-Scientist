@@ -663,4 +663,46 @@ ul li a {
   justify-content: center;
   color: #fff;
   font-size: 25px;
+}
+
+.login-register-btn {
+  padding: 4px 0px;
+}
+.login-register-btn a {
+  text-decoration: none;
+  color: #000;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.login-modals .form-control {
+  background-color: #fff;
+  color: #777;
+  border-width: 1px;
+  border-color: #cccccc;
+  height: 50px;
+}
+.login-modals .submit-btn {
+  height: 50px;
+  background-color: #f18500;
+  color: #fff;
+  font-weight: 600;
+}
+.login-modals .submit-sign-up {
+  background-color: #3f3f3f;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 36px;
+}
+.login-modals .forget-password {
+  text-decoration: none;
+  color: #f18500;
+}
+.login-modals .close-btn-right {
+  background-color: #e8e8e8;
+  padding: 8px;
+}
+.login-modals .position-relative-content {
+  position: relative;
 }/*# sourceMappingURL=style.css.map */
