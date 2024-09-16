@@ -385,6 +385,19 @@ ul li a {
   font-weight: 600;
 }
 
+.owl-clints .owl-nav {
+  display: flex;
+  justify-content: end;
+  /* background: red; */
+}
+.owl-clints .owl-nav i {
+  background-color: #f18500;
+  padding: 7px 15px;
+  margin-left: 5px;
+  color: #fff;
+  border-radius: 5px;
+}
+
 .footer h6 {
   font-size: 20px;
   font-weight: 600;
