@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="scss/style.css">
+    <style>
+        .btn.active {
+            background-color: #673AB7; /* Change to your desired active color */
+            color: #fff;
+        }
+    </style>
 
 </head>
 
@@ -22,11 +28,13 @@
         <div class="header__top py-1">
             <div class="container ">
                 <div class="d-flex justify-content-end login-register-btn">
-                    <a href="login.html" data-bs-toggle="modal" data-bs-target="#loginForm"><i
-                            class="fa-regular fa-user"></i> Login</a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#loginForm"><i class="fa-regular fa-user"></i>
+                        Login</a>
                     <!-- Button trigger modal -->
 
-                    <a href="login.html"><i class="fa-solid fa-circle-notch"></i> Register Account</a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#registerForm"><i
+                            class="fa-solid fa-circle-notch"></i> Register Account</a>
+
                 </div>
 
             </div>
@@ -718,14 +726,14 @@
                 <img src="images/destop.webp" alt="img">
             </div>
             <div class="free-class__details text-center ">
-                <h1  data-aos="zoom-in" data-aos-delay="100">
+                <h1 data-aos="zoom-in" data-aos-delay="100">
                     Try a free Trial Class
                 </h1>
-                <p  data-aos="fade-up" data-aos-delay="400">
+                <p data-aos="fade-up" data-aos-delay="200">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 </p>
-                <div data-aos="fade-up" data-aos-delay="800">
-                    <a href="#" >Got to free Class <i class="fa-solid fa-arrow-right" ></i></a>
+                <div data-aos="fade-up" data-aos-delay="400">
+                    <a href="#">Got to free Class <i class="fa-solid fa-arrow-right"></i></a>
 
                 </div>
             </div>
@@ -830,7 +838,7 @@
     </footer>
 
 
-    <!-- Modal -->
+    <!-- Modal login-->
     <div class="modal fade login-modals" id="loginForm" tabindex="-1" aria-labelledby="loginFormLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -883,6 +891,124 @@
             </div>
         </div>
     </div>
+    <!-- Register login-->
+
+    <div class="modal fade login-modals" id="registerForm" tabindex="-1" aria-labelledby="registerFormLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content position-relative-content">
+
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 fw-bold w-100" id="exampleModalLabel">
+                        <button class="btn submit-btn active" id="studentButton">Student Registration</button>
+                        <button class="btn submit-btn" id="teacherButton">Teacher Registration</button>
+                    </h1>
+
+                    <button type="button" class="btn-close close-btn-right" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <!-- Student Registration Form -->
+                <div class="modal-body" id="student-registration">
+                    <form>
+                        <div class="row g-3">
+
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" placeholder="Student Name ">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="number" class="form-control" placeholder="Student ID ">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" placeholder="Student Email">
+                            </div>
+
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" placeholder="School Name">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" placeholder="Grade">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" placeholder="Section">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" id="dateOfBirth" placeholder="Date of Birth"
+                                    onfocus="(this.type='date')" onblur="(this.type='text')">
+                            </div>
+
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" placeholder="Address">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="number" class="form-control" placeholder="Parents Phone Number">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" placeholder="Parents Email">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="password" class="form-control" placeholder="Your Password">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="password" class="form-control" placeholder="Confirm Password">
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="mb-4">
+                                    <button type="submit" class="btn w-100 submit-btn">Sign Up</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Teacher Registration Form -->
+                <div class="modal-body" id="teacher-registration" style="display: none;">
+                    <form>
+                        <div class="row g-3">
+
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" placeholder="Teacher Name ">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="number" class="form-control" placeholder="Teacher ID ">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" placeholder="Teacher Email">
+                            </div>
+
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" placeholder="Subject Expert">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="number" class="form-control" placeholder="Phone Number">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="password" class="form-control" placeholder="Your Password">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="password" class="form-control" placeholder="Confirm Password">
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="mb-4">
+                                    <button type="submit" class="btn w-100 submit-btn">Sign Up</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+
+
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -894,6 +1020,41 @@
         AOS.init();
     </script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
+    <!-- JavaScript to handle form switching -->
+    <script>
+        document.getElementById('studentButton').addEventListener('click', function () {
+            document.getElementById('student-registration').style.display = 'block';
+            document.getElementById('teacher-registration').style.display = 'none';
+        });
+
+        document.getElementById('teacherButton').addEventListener('click', function () {
+            document.getElementById('teacher-registration').style.display = 'block';
+            document.getElementById('student-registration').style.display = 'none';
+        });
+
+        // By default, display the student registration form
+        document.getElementById('student-registration').style.display = 'block';
+        document.getElementById('teacher-registration').style.display = 'none';
+    </script>
+    <script>
+        document.getElementById('studentButton').addEventListener('click', function () {
+            document.getElementById('student-registration').style.display = 'block';
+            document.getElementById('teacher-registration').style.display = 'none';
+            
+            // Add active class to the student button and remove from the teacher button
+            this.classList.add('active');
+            document.getElementById('teacherButton').classList.remove('active');
+        });
+    
+        document.getElementById('teacherButton').addEventListener('click', function () {
+            document.getElementById('teacher-registration').style.display = 'block';
+            document.getElementById('student-registration').style.display = 'none';
+            
+            // Add active class to the teacher button and remove from the student button
+            this.classList.add('active');
+            document.getElementById('studentButton').classList.remove('active');
+        });
+    </script>
     <script>
         $('.owl-partner').owlCarousel({
             loop: true,
@@ -929,8 +1090,8 @@
             autoplayTimeout: 3000,
             lazyLoad: true,
             autoplayHoverPause: true,
-            dots:true,
-            nav:true,
+            dots: true,
+            nav: true,
             items: 1,
             navText: [
                 '<i class="fa-solid fa-chevron-left"></i>',
